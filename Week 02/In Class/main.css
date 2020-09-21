@@ -4,7 +4,7 @@ body{
 
 main{
     padding: 10px;
-    background-color: burlywood;
+    background-color: #d387de40;
 }
 
 
@@ -15,8 +15,25 @@ main{
     }
 }
 
-@media(min-width: 1023px){
+@media(min-width: 664px){
     main{
-        background-color: rgba(223, 174, 110, 0.541);
+        background-color: rgba(110, 223, 181, 0.21);
     }
+}
+
+.icy{
+    width: 300px;
+    padding: 10px;
+}
+
+.marshy{
+    width: 300px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: darkslateblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27pt;
 }
