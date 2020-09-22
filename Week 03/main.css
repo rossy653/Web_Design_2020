@@ -1,6 +1,9 @@
 *{
+    padding: 0;
     margin: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 nav{
@@ -8,29 +11,36 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #502D55;
+    background-color: #153240;
     font-family: 'Poppins', sans-serif;
 }
 .logo{
-    color: #E6E0DA;
+    color: #ffe6b3;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-.nav-links a{
-    color: #E6E0DA;
-    text-decoration: none;
-    letter-spacing: 3px;
     font-weight: bold;
-    font-size: 20px;
 }
-.nav-links li{
-    list-style: none;
+
+nav ul{
+    float: right;
+    margin: right 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #FFF3D9;
+    font-size: 17px;
+}
+
+a.active,a:hover{
+    background: #2e6e8d;
+    transition: 0.7s;
 }
 
 .hamburger{
@@ -50,44 +60,42 @@ nav{
 }
 
 @media screen and (max-width:1224px){
-    .nav-links{
-        width: 50%;
+    nav ul li a{
+        font-size: 16px;
     }
-}
 
 @media screen and (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: fixed;
-        right: 0px;
-        height: 100vh;
-        top: 80px;
-        background-color: #8E4B71;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 50%;
-    }
-    .nav-links li{
-        display: block;
-    }
-
-    .nav-active{
-        font-size: 30px;
-    }
-    
-    input#check:checked + ul{
-        right: 0;
-    }
     
     .hamburger{
         display: block;
     }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #8E4B71;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px
+    }
+    a:hover,a.active{
+        background: none;
+        color: #95AE8D;
+    }
+    #check:checked ~ ul{
+        left: 100%;
+    }
 }
 
-.nav-active{
-    transform: translateX(0%)
+section{
+    background: url(https://ak.picdn.net/shutterstock/videos/4130140/thumb/1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
 }

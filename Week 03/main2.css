@@ -92,6 +92,10 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 100%;
     }
-
 }
 
+section{
+    background: url(https://ak.picdn.net/shutterstock/videos/4130140/thumb/1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
