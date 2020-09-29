@@ -1,0 +1,38 @@
+@import url("colors.css");
+@import url("navbar.css");
+
+body{
+    margin: 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+@media(min-width: 768px){
+    .single-img{
+       padding:0 20px 20px;
+
+
+    }
+
+    .gallery-img {
+        flex-basis: 23%;
+        margin: 10px;
+         
+
+    }
+
+
+    .gallery-links {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 20px;
+      }      
+} 
+
