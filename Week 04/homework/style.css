@@ -24,12 +24,12 @@ ul{
     }
 
     .gallery-img {
-        flex-basis: 340px;
-        margin: 10px;
+        flex-basis: 33.333%;
+        display: block;
         
     }
     .img blyl4{
-     flex-grow: 2;
+     flex-basis: 66%;
     }
 
 
