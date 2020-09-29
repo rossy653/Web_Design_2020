@@ -1,16 +1,32 @@
+
+*{
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+list-style: none;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: bold;
+
+
+}
+
 .flex{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
-
+.flex a{
+    padding-top: 15px;
+}
 nav img{
-    width: 150px;
+    width: 200px;
+    align-items: center;
 }
 
 nav ul li{
     padding: 10px;
-    
+
 }
 
 .order-1{
@@ -37,25 +53,10 @@ nav ul li{
 @media(min-width: 768px){
     .flex{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: center;
     }
-    .order-1{
-        order: 1;
-    }
-    
-    .order-2{
-        order: 2;
-    }
-    .order-2{
-        order: 3;
-    }
-    .order-2{
-        order: 4;
-    }
-    .order-2{
-        order: 5;
-    }
+   
 }
 
 .flex a{
