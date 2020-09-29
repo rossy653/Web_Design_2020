@@ -16,35 +16,19 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
 }
-.flex a{
-    padding-top: 15px;
+
+.flex img{
+    padding: 10px;
 }
+
 nav img{
     width: 200px;
     align-items: center;
 }
 
-nav ul li{
-    padding: 10px;
 
-}
 
-.order-1{
-    order: 1;
-}
 
-.order-2{
-    order: 2;
-}
-.order-2{
-    order: 3;
-}
-.order-2{
-    order: 4;
-}
-.order-2{
-    order: 5;
-}
 
 .flex-column{
     flex-direction: column;
@@ -56,9 +40,32 @@ nav ul li{
         justify-content: space-around;
         align-content: center;
     }
-   
+    
+    .flexbox-item-1 {
+        order: 3;
+    }
+    .flexbox-item-2 {
+        order: 1;
+    }
+    .flexbox-item-3 {
+        order: 2;
+    }
+    .flexbox-item-4 {
+        order: 4;
+    }
+    .flexbox-item-5 {
+        order: 5;
+    }
+    .flexbox-item-6 {
+        order: 6;
+    }
+ 
+
+    .flex img{
+        padding-top: 10px;
+        
+    }
+
+    
 }
 
-.flex a{
-    padding-top: 15px;
-}
