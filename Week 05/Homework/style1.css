@@ -18,6 +18,10 @@
     grid-row: 3 / span 2;
 }
 
+.ul a{
+    line-height: 35px;
+}
+
 
 /* Starting with IPad and Larger */
 @media (min-width: 768px) {
