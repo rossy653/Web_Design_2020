@@ -18,8 +18,14 @@
     grid-row: 3 / span 2;
 }
 
-.ul a{
-    line-height: 35px;
+.grid-container .grid-item:nth-child(4){
+    position: relative;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 30px;
+    
 }
 
 
@@ -52,7 +58,38 @@
         grid-row: 4;
         grid-column-start: 1;
         grid-column-end: 3;
-        }
+    }
+
+    .grid-container .grid-item:nth-child(4){
+        position: relative;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        line-height: 30px;
+        
+    }
+    .grid-container .grid-item:nth-child(2){
+        
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        
+        
+    }
+    
+    .grid-container .grid-item:nth-child(3){
+        padding: 10px;
+        
+    }
+    .mosaic1{
+        width: 500px;
+        display: block;
+        margin-left: 1px;
+    }
+    
+    
+    
     
 
 }
