@@ -1,0 +1,53 @@
+@import url('reset.css');
+@import url('colors.css');
+
+main{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+
+}
+html{
+    font-size: 10px;
+}
+
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px 0px;
+}
+p {
+    font-size: 1.5rem;
+}
+img{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .main{
+        width: 750px;
+        padding: 1rem 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 10px;
+        margin: auto;
+    }
+    h1 {
+        grid-column: 1 / span 2;
+        text-align: center;
+        font-size: 60px;
+    }
+    p :last-child{
+        grid-column: 1 / span 2;
+    }
+    
+}
+@media (min-width: 1080px){
+    main{
+        width: 960px;
+    }
+
+}

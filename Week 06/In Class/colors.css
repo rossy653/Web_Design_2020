@@ -1,0 +1,29 @@
+
+/*Background colors*/
+.footer{
+    background-color: rgb(115, 75,55);
+}
+
+.peach{
+    background-color: rgb(255, 184, 148);
+}
+
+.content{
+    background-color: rgb(68, 178, 172);
+}
+
+.sidebar{
+    background-color: rgb(221, 255, 253)
+}
+
+.black-tx {
+    color: rgb(0, 0, 0);
+}
+/*TEXT COLORS*/
+.sidebar{
+    color: gb(68, 178, 172); 
+}
+
+.sidebar2 {
+    background-color:rgb(255, 184, 148);
+}
