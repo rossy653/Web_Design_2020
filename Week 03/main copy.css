@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #153240;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    color: #ffe6b3;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+nav ul{
+    margin-right: auto;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #FFF3D9;
+    font-size: 17px;
+}
+
+a.active,a:hover{
+    background: #2e6e8d;
+    transition: 0.7s;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: #ffe6b3;
+    margin: 5px;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url(https://img.traveltriangle.com/blog/wp-content/uploads/2019/07/cover-page-for-10-Best-Places-to-Buy-a-Beach-House-in-2019.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+@media screen and (max-width:1224px){
+    nav ul li a{
+        font-size: 16px;
+    }
+
+@media screen and (max-width: 768px){
+    
+    .hamburger{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2e6e8d;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px
+    }
+    a:hover,a.active{
+        background: none;
+        color: #95AE8D;
+    }
+    #check:checked ~ ul{
+        left: 100%;
+    }
+}
+}

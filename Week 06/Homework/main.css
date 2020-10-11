@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #4e3448;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    align-self: center;
+   
+    margin-inline: 10px;
+}
+label{
+    margin-left: auto;
+    padding: 20px;
+}
+img{
+    width: 75px;
+
+}
+#check:checked ~ ul{
+    left: 100%;
+}
+#check{
+    display: none;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: #ffe6b3;
+    margin: 5px;
+}
+
+
+
+nav ul li a{
+    font-size: 20px
+}
+@media screen and (max-width: 768px){
+    ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: #6e8874;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        line-height: 80px;
+        border-bottom: 1px solid #95AE8D;
+    
+    }
+    nav ul li a{
+        font-size: 25px;
+        color: #FFF3D9;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #95AE8D;
+    }
+    #check:checked + ul{
+        left: 100%;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 20%);
+    gap: 20px;
+    height: 100vh;
+    width: 375px;
+    margin: auto;
+    color:white;
+}
+.grid-container .grid-item:nth-child(4){
+    position: relative;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 30px;
+}
+p{
+    background-color: teal;
+}
+
+
+section{
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+img{
+    width: 75px;
+}
+
+@media (min-width: 768px){
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        min-height: 8vh;
+        background-color: #4e3448;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    nav ul{
+        margin-right: auto;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 20px;
+    }
+    
+    nav ul li a{
+        color: #FFF3D9;
+        font-size: 17px;
+    }
+    
+    a.active,a:hover{
+        background: #2e6e8d;
+        transition: 0.7s;
+    }
+    
+    .hamburger{
+        display: none;
+        cursor: pointer;
+    }
+    
+    .hamburger div{
+        width: 25px;
+        height: 3px;
+        background-color: #ffe6b3;
+        margin: 5px;
+    }
+    
+    #check{
+        display: none;
+    }
+
+    
+    
+    
+    
+    
+}
+
