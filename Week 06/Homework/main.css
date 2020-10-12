@@ -6,11 +6,20 @@
     list-style: none;
 }
 body{
-    background: url(bg.jpg) no-repeat;
+    background-image: url(bg5.jpg);
     background-size: cover;
     width: 100%;
 }
 
+h1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*==========Nav Bar==========*/
 nav{
     display: flex;
     flex-direction: row;
@@ -45,7 +54,7 @@ img{
 }
 
 .hamburger div{
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: #ffe6b3;
     margin: 5px;
@@ -74,7 +83,7 @@ nav ul li a{
     
     }
     nav ul li a{
-        font-size: 25px;
+        font-size: 30px;
         color: #FFF3D9;
     }
     a:hover,a.active{
@@ -84,29 +93,176 @@ nav ul li a{
     #check:checked + ul{
         left: 100%;
     }
+    .grid-container .grid-item:nth-child(7){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(8){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(9){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(10){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(11){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(12){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(13){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(14){
+        display: none;
+    }
+    .grid-container .grid-item:nth-child(15){
+        display: none;
+    }
 }
+/*=========End Nav Bar========*/
+/*=========Grid, Mobile Version=======*/
 .grid-container{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 20%);
-    gap: 20px;
-    height: 100vh;
-    width: 375px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 18%);
+    gap: 0px;
+    height: auto;
+    width: 100%;
     margin: auto;
     color:white;
 }
-.grid-container .grid-item:nth-child(4){
-    position: relative;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    line-height: 30px;
+.grid-container .grid-item:nth-child(1){
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    text-align: center;
+   background-image: url(coffee3.jpg);
+   grid-column: 1 / span 2;
 }
-p{
-    background-color: teal;
+.grid-container .grid-item:nth-child(2){
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+.grid-container .grid-item:nth-child(3){
+    text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    grid-column: 2 / span 1;
+}
+.grid-container .grid-item:nth-child(4){
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    background-image: url(espresso2.jpg);
+}
+.grid-container .grid-item:nth-child(5){
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    height: 280px;
+}
+.grid-container .grid-item:nth-child(6){
+    text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
 }
 
+/*======Grid 2 =======*/
+.grid-container2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 18%);
+    gap: 0px;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    color:white;
+}
+
+
+.grid-container2 .grid-item:nth-child(1){
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    text-align: center;
+   background-image: url(alternatives2.jpg);
+   grid-column: 1 / span 2;}
+
+
+.grid-container2 .grid-item:nth-child(2){
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+.grid-container2 .grid-item:nth-child(3){
+    text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    grid-column: 2 / span 1;
+}
+.grid-container2 .grid-item:nth-child(4){
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    background-image: url(tea2.jpg);
+}
+.grid-container2 .grid-item:nth-child(5){
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+.grid-container2 .grid-item:nth-child(6){
+    text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+.grid-container2 .grid-item:nth-child(7){
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    background-image: url(extras2.jpg);
+}
+.grid-container2 .grid-item:nth-child(8){
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:transparent;
+}
+.grid-container2 .grid-item:nth-child(9){
+    text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:transparent;
+}
+p{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid #4e3448;
+}
+
+/*========End of Grid Mobile Verision===========*/
 
 section{
     background: url(bg.jpg) no-repeat;
@@ -156,7 +312,7 @@ img{
     }
     
     .hamburger div{
-        width: 25px;
+        width: 30px;
         height: 3px;
         background-color: #ffe6b3;
         margin: 5px;
@@ -165,10 +321,147 @@ img{
     #check{
         display: none;
     }
-
+/*=======Grid Desctop=========*/
+.grid-container2{
+    display: none;
+}
+    .grid-container {
+        display: grid;
+        grid-template-columns: 24% 24% 4% 24% 24%;
+        grid-template-rows: repeat(5, 25%);
+        height: 100vh;
+        width: 1000px;
+        margin: auto;
+        color: white;
+        
+    }
+    .grid-container .grid-item:nth-child(1){
+        font-family: 'Dancing Script', cursive;
+        font-size:50px;
+        text-align: center;
+        background: transparent;
+       grid-column: 1 / span 2;
+    }
+    .grid-container .grid-item:nth-child(2){
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 1/ span 1;
+    }
+    .grid-container .grid-item:nth-child(3){
+        text-align: right;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 2 / span 1;
+    }
+    .grid-container .grid-item:nth-child(4){
+        font-family: 'Dancing Script', cursive;
+        font-size:50px;
+        text-align: center;
+        grid-column: 1 / span 2;
+        background: transparent;
+    }
+    .grid-container .grid-item:nth-child(5){
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        height: 280px;
+        grid-column: 1/ span 1;
+    }
+    .grid-container .grid-item:nth-child(6){
+        text-align: right;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 2 / span 1;
+    }
+    .grid-container .grid-item:nth-child(7){
+        font-family: 'Dancing Script', cursive;
+        font-size:50px;
+        text-align: center;
+       background: transparent;
+       grid-column: 4 / span 2;
+       grid-row-start: 1;
+    }
     
     
-    
+    .grid-container .grid-item:nth-child(8){
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 4 / span 1;
+       grid-row-start: 2;
+    }
+    .grid-container .grid-item:nth-child(9){
+        text-align: right;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 5 / span 1;
+        grid-row-start: 2;
+    }
+    .grid-container .grid-item:nth-child(10){
+        font-family: 'Dancing Script', cursive;
+        font-size:50px;
+        text-align: center;
+        grid-column: 1 / span 2;
+        background: transparent;
+        grid-column: 4/ span 2;
+       grid-row-start: 3;
+    }
+    .grid-container .grid-item:nth-child(11){
+        text-align: left;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 4 / span 1;
+       grid-row-start: 4;
+    }
+    .grid-container .grid-item:nth-child(12){
+        text-align: right;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 5 / span 1;
+       grid-row-start: 4;
+    }
+    .grid-container .grid-item:nth-child(13){
+        font-family: 'Dancing Script', cursive;
+        font-size:50px;
+        text-align: center;
+        grid-column: 4 / span 2;
+        background: transparent;;
+    }
+    .grid-container .grid-item:nth-child(14){
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color:transparent;
+        grid-column: 4 / span 1;
+       grid-row-start: 6;
+    }
+    .grid-container .grid-item:nth-child(15){
+        text-align: right;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        grid-column: 5 / span 1;
+       grid-row-start: 6;
+    }
     
     
 }
