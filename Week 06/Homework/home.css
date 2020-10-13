@@ -1,3 +1,6 @@
+@import url("nav.css");
+@import url("footer.css");
+
 *{
     padding: 0;
     margin: 0px;
@@ -11,7 +14,7 @@ html{
 }
 
 body{
-
+    color: #fff;
     margin: 0;
     padding: 0;
     perspective: 1px;
@@ -20,83 +23,11 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Luna";
+    text-align: center;
 }
 
-/*======Navigation Bar, Mobile Version======*/
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #4e3448;
-    font-family: 'Poppins', sans-serif;
-}
-.logo{
-    align-self: center;
-   
-    margin-inline: 10px;
-}
-label{
-    margin-left: auto;
-    padding: 20px;
-}
-img{
-    width: 75px;
 
-}
-#check:checked ~ ul{
-    left: 100%;
-}
-#check{
-    display: none;
-}
-.hamburger{
-    display: block;
-    cursor: pointer;
-}
-
-.hamburger div{
-    width: 25px;
-    height: 3px;
-    background-color: #ffe6b3;
-    margin: 5px;
-}
-
-nav ul li a{
-    font-size: 20px
-}
-@media screen and (max-width: 768px){
-    ul{
-        position: fixed;
-        width: 100%;
-        height: auto;
-        background-color: #6e8874;
-        top: 80px;
-        left: 0;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li{
-        display: block;
-        line-height: 80px;
-        border-bottom: 1px solid #95AE8D;
-    
-    }
-    nav ul li a{
-        font-size: 25px;
-        color: #FFF3D9;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #95AE8D;
-    }
-    #check:checked + ul{
-        left: 100%;
-    }
-}
-  /*======End of navigation Bar, Mobile Version=========*/  
 
 
 section{
@@ -187,51 +118,7 @@ header * {
 /*===========Start of Desctop Version=============*/
 @media (min-width: 768px){
     
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-        align-items: center;
-        min-height: 8vh;
-        background-color: #4e3448;
-        font-family: 'Poppins', sans-serif;
-    }
     
-    nav ul{
-        margin-right: auto;
-    }
-    
-    nav ul li{
-        display: inline-block;
-        line-height: 80px;
-        margin: 0 20px;
-    }
-    
-    nav ul li a{
-        color: #FFF3D9;
-        font-size: 17px;
-    }
-    
-    a.active,a:hover{
-        background: #2e6e8d;
-        transition: 0.7s;
-    }
-    
-    .hamburger{
-        display: none;
-        cursor: pointer;
-    }
-    
-    .hamburger div{
-        width: 25px;
-        height: 3px;
-        background-color: #ffe6b3;
-        margin: 5px;
-    }
-    
-    #check{
-        display: none;
-    }
     header{
         box-sizing: border-box;
         min-height: 100vh;

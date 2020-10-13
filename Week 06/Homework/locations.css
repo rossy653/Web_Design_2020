@@ -1,0 +1,77 @@
+@import url("nav.css");
+@import url("footer.css");
+
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    height: 100%;
+    overflow:hidden;
+}
+
+body{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+    text-align: center;
+}
+
+
+
+
+section{
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+img{
+    width: 75px;
+}
+
+/*===Social Icons================*/
+#social-icons{
+    height: 150px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    background: white;
+}
+
+#social-icons a{
+    display:inline-block;
+    padding: 5px 10px;
+    margin: 0 50px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color, 2s ease
+}
+
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color: #3b5998;
+}
+.instagram{
+    color: #e1306c;
+}
+.twitter{
+    color:#38a1f3;
+}
+
+
+/*===========Start of Desktop Version=============*/
+@media (min-width: 768px){
+    
+}
+
