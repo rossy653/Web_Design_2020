@@ -10,7 +10,7 @@
     list-style: none;
 }
 body{
-    background-image: url(bg5.jpg);
+    background-color: #e3bbbd;
     background-size: cover;
     width: 100%;
     text-align: center;
@@ -56,11 +56,43 @@ h1{
     }
 }
 
+.coffe p{
+    line-height: 55px;
+}
+.espresso p{
+    line-height: 55px;
+}
+.alternatives p{
+    line-height: 55px;
+}
+.tea p{
+    line-height: 55px;
+}
+.extras p{
+    line-height: 55px;
+}
+.espresso{
+    padding: 15px;
+}
+
+.coffe{
+    padding: 15px;
+}
+.alternatives{
+    padding: 15px;
+}
+.tea{
+    padding: 15px;
+}
+.extras{
+    padding: 15px;
+}
+
 /*=========Grid, Mobile Version=======*/
 .grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-auto-rows: 100px 300px;
+    grid-auto-rows: 200px 300px 200px auto;
     gap: 0px;
     height: auto;
     width: 100%;
@@ -73,6 +105,7 @@ h1{
     text-align: center;
    background-image: url(coffee3.jpg);
    grid-column: 1 / span 2;
+   
 }
 .grid-container .grid-item:nth-child(2){
     text-align: left;
@@ -116,7 +149,7 @@ h1{
 .grid-container2{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-auto-rows: 100px 300px;
+    grid-auto-rows: 200px 300px;
     gap: 0px;
     height: auto;
     width: 100%;
@@ -204,9 +237,7 @@ section{
     height: calc(100vh - 80px);
 }
 
-img{
-    width: 75px;
-}
+
 
 @media (min-width: 768px){
     

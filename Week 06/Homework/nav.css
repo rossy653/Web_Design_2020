@@ -20,7 +20,7 @@ nav{
     justify-items: center;
     align-items: center;
     min-height: 8vh;
-    background-color: #4e3448;
+    background-color:rgba(0,0,0,.4);
     font-family: 'Poppins', sans-serif;
 }
 nav ul li a .logo{
@@ -29,16 +29,13 @@ nav ul li a .logo{
 
    
 }
-label{
-    margin-left: auto;
-    padding: 20px;
-}
+
 img{
     width: 100px;
 
 }
 #check:checked ~ ul{
-    left: 100%;
+    left: 0%;
 }
 #check{
     display: none;
@@ -61,16 +58,17 @@ img{
 nav ul li a{
     font-size: 20px
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: auto;
         background-color: #6e8874;
-        top: 80px;
-        left: 0;
+        top: 100px;
+        left: 100%;
         text-align: center;
         transition: all 0.5s;
+        margin: auto; 
     }
     nav ul li{
         display: block;
@@ -91,9 +89,15 @@ nav ul li a{
     }
     .logo-m{
         display: block;
+        padding: 5px;
     }
     nav ul li a .logo{
         display: none;
+    }
+
+    label{
+        margin-left: auto;
+        padding: 20px;
     }
 }
 /*=========End Nav Bar Mobil========*/
@@ -109,17 +113,18 @@ nav ul li a{
         justify-items: center;
         align-items: center;
         min-height: 8vh;
-        background-color: #4e3448;
+        background-color:rgba(0,0,0,.4);
         font-family: 'Poppins', sans-serif;
     }
     
     nav ul{
-        margin-right: auto;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
     }
     
     nav ul li{
         display: inline-block;
-        line-height: 80px;
         margin: 0 20px;
     }
     
@@ -152,6 +157,9 @@ nav ul li a{
         align-self: center;
        
         margin-inline: 10px;
+    }
+    label{
+        display:none;
     }
     
     

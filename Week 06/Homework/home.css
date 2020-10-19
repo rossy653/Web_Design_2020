@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    color: #fff;
+    color: #4e3448;
     margin: 0;
     padding: 0;
     perspective: 1px;
@@ -22,11 +22,14 @@ body{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: "Luna";
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    background-color: #4e3448;
 }
 
-
+h1{
+    font-family: 'Dancing Script', cursive;
+}
 
 
 
@@ -36,9 +39,7 @@ section{
     height: calc(100vh - 80px);
 }
 
-img{
-    width: 75px;
-}
+
 /*=======Parallax Scrolling, Mobile Version=====*/
 header{
     box-sizing: border-box;
@@ -47,6 +48,7 @@ header{
     position: relative;
     transform-style: inherit;
     width: 100vw;
+    
 }
 
 header h1{
@@ -77,10 +79,11 @@ header::before{
 
 header * {
     font-weight: normal;
-    letter-spacing: 0.2em;
+    letter-spacing: 0em;
     text-align: center;
     margin: 0;
     padding: 1em 0;
+    background-color: #e3bbbd;
 }
 /*===========End of Parallax Scroling, Mobile Version======*/
 
