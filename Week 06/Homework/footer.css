@@ -15,7 +15,7 @@ body{
 footer{
     background: rgb(23, 31, 22);
     padding-top: 2%;
-    margin-top: 15px;
+    
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
@@ -36,7 +36,14 @@ footer p{
 footer .top a{
     position: absolute;
     right: 2%;
-    top: 69%;
-    color: #bdc1ac;
+    top: 1%;
+    color: #FFF3D9;
     font-size: 20px;
+}
+
+a:link{
+    color:#FFF3D9;
+}
+a:visited{
+    color:#FFF3D9;
 }
