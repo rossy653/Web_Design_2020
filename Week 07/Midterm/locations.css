@@ -99,7 +99,7 @@ th {
 @media (min-width: 768px){
     .grid-container{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     grid-auto-rows: 30px 300px;
     padding: 0px;
     width: 80%;
@@ -112,7 +112,7 @@ th {
 
 .grid-container{
 display: grid;
-grid-template-columns: 60% 40%;
+grid-template-columns: 50% 50%;
 grid-auto-rows: 30px 300px;
 padding: 30px;
 width: 80%;

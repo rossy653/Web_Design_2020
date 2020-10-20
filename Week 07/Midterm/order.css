@@ -194,7 +194,7 @@ h3{
 }
 .grid-container .grid-item:nth-child(5){
     text-align: center;
-    ffont-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     align-content: center;
     grid-column: 2/ span 1;
     grid-row: 3;
