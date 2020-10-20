@@ -89,7 +89,7 @@ header{
 
 .grid-container .grid-item:nth-child(1){
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     align-content: center;
     grid-column: 1;
     grid-row: 1;
@@ -100,7 +100,7 @@ header{
 }
 .grid-container .grid-item:nth-child(2){
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #e7acaa;
     grid-column: 1/ span 1;
     grid-row: 2;
@@ -110,7 +110,7 @@ header{
 }
 .grid-container .grid-item:nth-child(3){
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #e2b995;
     grid-column: 1/ span 1;
     grid-row: 3;
@@ -119,7 +119,7 @@ header{
 }
 .grid-container .grid-item:nth-child(4){
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #d3e0ce;
     grid-column: 1/ span 1;
     grid-row: 4;
@@ -128,7 +128,7 @@ header{
 }
 .grid-container .grid-item:nth-child(5){
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #9cb8a0;
     grid-column: 1/ span 1;
     grid-row: 5;
@@ -199,7 +199,7 @@ h2{
     }
     .grid-container .grid-item:nth-child(1){
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         align-content: center;
         grid-column: 1/ span 4;
         grid-row: 1;
@@ -211,7 +211,7 @@ h2{
     }
     .grid-container .grid-item:nth-child(2){
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: #e7acaa;
         grid-column: 1/ span 1;
         grid-row: 2;
@@ -221,7 +221,7 @@ h2{
     }
     .grid-container .grid-item:nth-child(3){
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: #e2b995;
         grid-column: 2/ span 1;
         grid-row: 2;
@@ -230,7 +230,7 @@ h2{
     }
     .grid-container .grid-item:nth-child(4){
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: #d3e0ce;
         grid-column: 3/ span 1;
         grid-row: 2;
@@ -239,7 +239,7 @@ h2{
     }
     .grid-container .grid-item:nth-child(5){
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: #9cb8a0;
         grid-column: 4/ span 1;
         grid-row: 2;
