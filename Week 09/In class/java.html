@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>Buttons</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        #myHeading{
+            background-color: aquamarine;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #myDiv{
+            height: 400px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+   <h1 id="myHeading">Hello, <span id="userName"> World</span></h1>
+
+   <div id="myDiv"></div>
+
+   <button href="#" id="Orange">Change the Color to Orange </button>
+   <button href="#" id="Blue">Change the Color to Blue</button>
+
+
+   <div></div> 
+
+   <script>
+       console.log("This is your page talking to you!");
+
+       let answer = prompt("What's your name?", "Тино <3");
+       console.log(answer);
+       document.getElementById("userName").innerText = answer;
+
+
+
+       let bigDiv = document.getElementById("myDiv");
+       let trigButton = document.getElementById("colorChange");
+       let docHeading = document.getElementById("myHeading");
+
+       console.log(trigButton);
+
+       trigButton.addEventListener("click", function(){
+           let userAnswer = confirm( "Are you sure you want to do this?")
+           console.log(userAnswer);
+
+
+           if(userAnswer == true){
+           docHeading.style.backgroundColor = "plum";
+
+           bigDiv.style.backgroundColor = "salmon"; 
+
+           let smallHeading = document.createElement("h5");
+           smallHeading.innerText = "This is salmon now!"; 
+           smallHeading.style.fontStyle = "Italic";
+           bigDiv.appendChild(smallHeading);
+
+
+
+           alert("The changes are now complete!")
+
+           }
+           else{
+               alert("No action will be taken")
+           }
+
+
+        });
+       
+
+
+       
+
+    </script>
+
+</body>
+</html>
