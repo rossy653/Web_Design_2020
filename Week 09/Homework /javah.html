@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Buttons</title>
     <style>
         body{
             margin: 0px;
         }
 
         #myHeading{
-            background-color: aquamarine;
+            background-color: rgba(229, 192, 223, 0.979);
             margin: 0px;
             padding: 20px;
         }
@@ -23,26 +24,25 @@
     </style>
 </head>
 <body>
-   <h1 id="myHeading">Hello, <span id="userName"> World</span></h1>
+   <h1 id="myHeading">Change My Colors</span></h1>
+  
 
    <div id="myDiv"></div>
 
-   <button href="#" id="colorChange">Change the Color</button>
 
+   <ul>
+   <li><button class="btn btn1" href="#" id="Blue">Make me Blue!</button></li>
+   <li><button class="btn btn2" href="#" id="Orange">Make me Orange!</button></li>
+   </ul>
 
-   <div></div> 
-
+   
    <script>
        console.log("This is your page talking to you!");
 
-       let answer = prompt("What's your name?", "Тино <3");
-       console.log(answer);
-       document.getElementById("userName").innerText = answer;
-
-
 
        let bigDiv = document.getElementById("myDiv");
-       let trigButton = document.getElementById("colorChange");
+       let trigButton = document.getElementById("Blue");
+       let trigButton2 = document.getElementById("Orange");
        let docHeading = document.getElementById("myHeading");
 
        console.log(trigButton);
@@ -53,13 +53,45 @@
 
 
            if(userAnswer == true){
-           docHeading.style.backgroundColor = "plum";
+           docHeading.style.backgroundColor = "#56A7C7";
 
-           bigDiv.style.backgroundColor = "salmon"; 
+           bigDiv.style.backgroundColor = "#B7E8FB"; 
 
-           let smallHeading = document.createElement("h5");
-           smallHeading.innerText = "This is salmon now!"; 
-           smallHeading.style.fontStyle = "Italic";
+           let smallHeading = document.createElement("h2");
+           smallHeading.innerText = "Let the blue sky meet the blue sea and all is blue for a time. - Moncy Barbour"; 
+           smallHeading.style.fontFamily = "Poppins, sans-serif";
+           smallHeading.style.padding = "15px";
+           smallHeading.style.textAlign = "center";
+           bigDiv.appendChild(smallHeading);
+
+
+
+           alert("The changes are now complete!")
+
+           }
+           else{
+               alert("No action will be taken")
+           }
+
+
+        });
+
+       trigButton2.addEventListener("click", function(){
+           let userAnswer = confirm( "Are you sure you want to do this?")
+           console.log(userAnswer);
+
+
+           if(userAnswer == true){
+           docHeading.style.backgroundColor = "#FFA938";
+
+           bigDiv.style.backgroundColor = "#FFCA85"; 
+
+           let smallHeading = document.createElement("h2");
+           smallHeading.innerText = "Orange is the sky, otange is the sea, all you want to do is share this sunset with me.";
+           smallHeading.style.padding = "15px";
+           smallHeading.style.fontFamily = "Pacifico, cursive";
+           smallHeading.style.fontSize = "27px";
+           smallHeading.style.textAlign = "center";
            bigDiv.appendChild(smallHeading);
 
 

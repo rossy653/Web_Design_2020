@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn{ 
+    border: 1 px;
+    
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.btn1{
+    border: solid rgb(1, 35, 78);
+    background-color: #56A7C7;
+    color: white;
+}
+.btn2{
+    border: solid rgb(177, 95, 3);
+    background-color:  #fa9715;
+    color: white;
+}
+
