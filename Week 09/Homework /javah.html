@@ -58,11 +58,14 @@
            bigDiv.style.backgroundColor = "#B7E8FB"; 
 
            let smallHeading = document.createElement("h2");
+           smallHeading.id = "BlueHeading";
            smallHeading.innerText = "Let the blue sky meet the blue sea and all is blue for a time. - Moncy Barbour"; 
            smallHeading.style.fontFamily = "Poppins, sans-serif";
            smallHeading.style.padding = "15px";
            smallHeading.style.textAlign = "center";
            bigDiv.appendChild(smallHeading);
+
+           document.getElementById("OrangeHeading").style.display = "none";
 
 
 
@@ -87,12 +90,21 @@
            bigDiv.style.backgroundColor = "#FFCA85"; 
 
            let smallHeading = document.createElement("h2");
+           smallHeading.id = "OrangeHeading";
            smallHeading.innerText = "Orange is the sky, otange is the sea, all you want to do is share this sunset with me.";
            smallHeading.style.padding = "15px";
            smallHeading.style.fontFamily = "Pacifico, cursive";
            smallHeading.style.fontSize = "27px";
            smallHeading.style.textAlign = "center";
            bigDiv.appendChild(smallHeading);
+
+           document.getElementById("BlueHeading").style.display = "none";
+
+
+
+
+
+
 
 
 
