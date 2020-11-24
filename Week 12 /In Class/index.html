@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <main>
+        <div class="some-ps">
+            <p class="lorem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium quas ducimus vero deserunt eius facere minima architecto! Quia quos tempora officiis, voluptate eos molestiae sapiente at recusandae veniam eveniet?</p>
+            <p class="lorem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium quas ducimus vero deserunt eius facere minima architecto! Quia quos tempora officiis, voluptate eos molestiae sapiente at recusandae veniam eveniet?</p>
+        </div>
+    </main>
+    
+    <img src="pic4.jpg" alt="Kitty at home" class="js-image">
+<div>
+    <button id="clickB">Click me to add another.</button>
+    <button id="clickR">Click me to remove.</button>
+
+    <button id="btnHide">Click me to hide image.</button>
+    <button id="btnToggle">Click me to toggle image.</button>
+
+    <button id="fadeOut">Click me to fade out image.</button>
+    <button id="fadeToggle">Click me to toggle fade image.</button>
+
+    <button id="slideToggle">Click me to toggle slide image.</button>
+
+    <button id="animate">Click me to custom animation.</button>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#clickB").click(function(){
+                $(".some-ps").append('<p class="lorem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium quas ducimus vero deserunt eius facere minima architecto! Quia quos tempora officiis, voluptate eos molestiae sapiente at recusandae veniam eveniet?</p>');
+
+            });
+        
+
+        $("#clickR").click(function(){
+            $(".lorem-p:last-child").remove();
+        });
+
+        $("#btnHide").click(function(){
+            $(".js-image").hide();
+        });
+        $("#btnToggle").click(function(){
+            $(".js-image").toggle();
+        });
+        $("#fadeOut").click(function(){
+            $(".js-image").fadeOut(2000);
+        });
+        $("#fadeToggle").click(function(){
+            $(".js-image").fadeToggle(3000);
+        });
+        $("#slideToggle").click(function(){
+            $(".js-image").slideToggle(3000, function(){
+                $(".some-ps").after("<p>Animation done!<p>");
+            
+            })
+
+        });
+        $("#animation").click(function(){
+            $(".js-image").animate({
+                height: "0px",
+                opacity: "0.2",
+                width: "920px",})
+        });
+    });
+    
+
+       
+    </script>
+</body>
+</html>
