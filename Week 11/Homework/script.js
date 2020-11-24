@@ -5,36 +5,39 @@
 
  let carousel = document.getElementById("carousel");
  let carouselIMG = document.getElementById("carouselIMG");
+ 
 
 
  let categoryUpdate = function(){
-    let foodSubcats = ["Shoes", "Jewelry",];
-    let animSubcats = ["Fashion", "Makeup",];
-    let natureSubcats = ["Cities", "Deserts",];
+    let shopSubcats = ["Shoes", "Jewelry",];
+    let colabsSubcats = ["Fashion", "Makeup",];
+    let locatSubcats = ["Cities", "Deserts",];
+    
 
     subSelect.innerHTML = "";
 
-    if(catSelect.value === "food"){
-        console.log("food");
-        foodSubcats.forEach(function(elem){
+    if(catSelect.value === "shop"){
+        console.log("shop");
+        shopSubcats.forEach(function(elem){
+            let opt = document.createElement("option");
+            opt.value = elem;
+            opt.innerText = elem;
+            subSelect.appendChild(opt);
+        })
+        
+    }
+    else if(catSelect.value === "colabs"){
+        console.log("colaborations");
+        colabsSubcats.forEach(function(elem){
             let opt = document.createElement("option");
             opt.value = elem;
             opt.innerText = elem;
             subSelect.appendChild(opt);
         })
     }
-    else if(catSelect.value === "anim"){
-        console.log("animals");
-        animSubcats.forEach(function(elem){
-            let opt = document.createElement("option");
-            opt.value = elem;
-            opt.innerText = elem;
-            subSelect.appendChild(opt);
-        })
-    }
-    else if(catSelect.value === "nat"){
-        console.log("nature");
-        natureSubcats.forEach(function(elem){
+    else if(catSelect.value === "locat"){
+        console.log("locations");
+        locatSubcats.forEach(function(elem){
             let opt = document.createElement("option");
             opt.value = elem;
             opt.innerText = elem;
@@ -43,11 +46,11 @@
     }}
     catSelect.addEventListener("change", categoryUpdate);
 
-  let images = [
-     "shoes1.jpg",
-    "shoes2.jpg",
-    "shoes3.jpg",
-    ]
+    
+    //Carousel of Images
+
+    images = ["shoes1.jpg","shoes2.jpg","shoes3.jpg",]
+  
  let counter = 0;
 
 
