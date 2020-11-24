@@ -20,7 +20,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 10vh;
     background-color: #5d4954;
     
 }
@@ -81,8 +81,10 @@ select{
 }
 
 .images{
-    padding: 40px;
+    padding: 100px;
+   
 }
+
 
 
 @media screen and (max-width:1224px){
