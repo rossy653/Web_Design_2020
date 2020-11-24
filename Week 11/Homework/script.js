@@ -1,17 +1,20 @@
+let catSelect = document.getElementById("category");
+let subSelect = document.getElementById("subcategory");
 
+let carousel = document.getElementById("carousel");
+let carouselIMG = document.getElementById("carouselIMG");
 
- let catSelect = document.getElementById("category");
- let subSelect = document.getElementById("subcategory");
+let imagesS = ["shoes1.jpg","shoes2.jpg","shoes3.jpg"];
 
- let carousel = document.getElementById("carousel");
- let carouselIMG = document.getElementById("carouselIMG");
- 
+let imagesM = ["makeup1.jpg","makeup2.jpg","makeup3.jpg"];
 
- let categoryUpdate = function(){
+let imagesJ = ["jewel1.jpg","jewel2.jpg","jewel3.jpg"];
+let counter = 0;
+
+let categoryUpdate = function(){
     let shopSubcats = ["Shoes", "Jewelry",];
     let colabsSubcats = ["Fashion", "Makeup",];
     let locatSubcats = ["Cities", "Deserts",];
-    
 
     subSelect.innerHTML = "";
 
@@ -42,31 +45,37 @@
             opt.innerText = elem;
             subSelect.appendChild(opt);
         })
-    }}
-    catSelect.addEventListener("change", categoryUpdate);
-
-
-    //Carousel of Images
-
-    images = ["shoes1.jpg","shoes2.jpg","shoes3.jpg",]
-  
- let counter = 0;
-
-
- let imgChange = function(){
-     counter++;
-     if(counter === 3) {counter = 0}
-     carouselIMG.src = images[counter];
- }
- let subscribeRequest = function(){
-    prompt("Give us your email or else!!!", "my@email.com")
+    }
 }
-    window.addEventListener("load", function(){
-        setTimeout(imgChange, 4000); 
-        setInterval (imgChange,3000);
-    })
+
+let imgChange = function(){
+    counter++;
+    if(counter === 3) {
+        counter = 0;
+    }
+    if(subSelect.value == "Shoes"){
+        carouselIMG.src = imagesS[counter]; 
+    }
+    else if(subSelect.value == "Makeup"){
+        carouselIMG.src = imagesM[counter];
+    }
+    else{
+        carouselIMG.src = imagesJ[counter];
+    }
+    
+}
 
 
+let subscribeRequest = function(){
+    prompt("Give us your email or else!!!", "my@email.com");
+}
 
+
+window.addEventListener("load", function(){
+    //setTimeout(subscribeRequest, 4000); 
+    setInterval (imgChange,3000);
+})
+
+catSelect.addEventListener("change", categoryUpdate);
 
  
