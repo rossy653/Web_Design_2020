@@ -6,11 +6,11 @@
  let carousel = document.getElementById("carousel");
  let carouselIMG = document.getElementById("carouselIMG");
  
-let carouselUpdate = function(){
-    let imagesShoes = images = ["shoes1.jpg","shoes2.jpg","shoes3.jpg",]
-    let imagesJewel = images = ["jewel1.jpg","jewel2.jpg","jewel3.jpg",]
-    
-}
+let images1 = ["shoes1.jpg","shoes2.jpg","shoes3.jpg",]
+let images2 = ["jewel1.jpg","jewel2.jpg","jewel3.jpg",]
+let images2 = ["makeup1.jpg","makeup2.jpg","makeup3.jpg",]
+
+
 
  let categoryUpdate = function(){
     let shopSubcats = ["Shoes", "Jewelry",];
