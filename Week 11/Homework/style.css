@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    min-height: 100vh;
+    background: linear-gradient( to right bottom , #c78d41c4 , #f1e7cf );
+    background-repeat: no-repeat;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
+nav ul{
+    float: left;
+    margin: left 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 40px;
+}
+
+nav ul li a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.active,a:hover{
+    background: #d1b6beb2;
+    transition: 0.7s;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: #251738;
+    margin: 5px;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url(https://i.pinimg.com/474x/16/6f/51/166f514a2d02fd124a8fd311658e9b55.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);}
+
+
+@media screen and (max-width:1224px){
+    nav ul li a{
+        font-size: 16px;
+    }
+
+@media screen and (max-width: 768px){
+    
+    .hamburger{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #30262c3d;
+        top: 54px;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px
+    }
+    a:hover,a.active{
+        background: #5d4954ad;
+        
+    }
+    #check:checked ~ ul{
+        left: 100%;
+    }
+}
+}

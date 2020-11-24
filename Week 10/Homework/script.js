@@ -9,6 +9,27 @@ thumb3Src = document.getElementById('thumb3').src;
 thumb4 = document.getElementById('thumb4');
 thumb4Src = document.getElementById('thumb4').src; 
 
+toggleIMG = document.getElementById('menuToggleIMG');
+
+toggleIMG.addEventListener("click",function(){
+    console.log(toggleIMG.title);
+   if(toggleIMG.title === "closed" ){
+       //one thing
+       getNavSlidebar.style.visability = "visible";
+       toggleIMG.style.background = "url('heart.png')";
+       toggle.title = "open";
+   } 
+   else{
+       //something else
+       getNavlinks.style.visability = "hidden";
+       toggleIMG.style.background = "url('button.png')";
+       toggle.title = "closed";
+   }
+});
+
+
+
+
 thumb1.addEventListener("click", function(){
     mainImg.src=thumb1Src
 })
@@ -22,24 +43,3 @@ thumb4.addEventListener("click", function(){
     mainImg.src=thumb4Src
 })
 
-
-let toggleNavStatus = false;
-
-let toggleNav = function () {
-    let getNavSlidebar = document.querySelector(".nav-slidebar");
-    let getButton = document.querySelector(".btn-toggle-nav");
-
-    if (toggleNavStatus === false) {
-        getNavSlidebar.style.visability = "visible";
-        getButton.style.background = "url(heart.png)"
-    }
-    toggleNavStatus = true;
-}
-
-    
-    else (toggleNavStatus === true) {
-        getNavlinks.style.visability = "hidden";
-        getButton.style.background = "url(burger.png)";
-    
-toggleNavStatus = false;
-}
