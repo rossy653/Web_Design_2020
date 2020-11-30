@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <main>
+        <h1>Gallery</h1>
+    </main>
+    
+    <div class="container">
+
+    <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+            <div class="image">
+                <a href="cake.jpg"><img src="cake.jpg" alt="cake" class="js-image"></a>
+            </div>
+        </div>
+
+        <div class="gallery-container w-2 h-2">
+        
+        <button id="btnHide">Click me to hide image.</button>
+        <button id="btnToggle">Click me to toggle image.</button>
+    
+        <button id="fadeOut">Click me to fade out image.</button>
+        <button id="fadeToggle">Click me to toggle fade image.</button>
+    
+        <button id="slideToggle">Click me to toggle slide image.</button>
+    
+        <button id="animate">Click me to custom animation.</button>
+    
+    </div>
+    </div>
+       
+
+    <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+            <div class="image">
+                <a href="donut.jpg"><img src="donut.jpg" alt="donut" class="js-image2"></a>
+            </div>
+        </div>
+        <div>
+        
+            <button id="btnHide2">Click me to hide image.</button>
+            <button id="btnToggle2">Click me to toggle image.</button>
+        
+            <button id="fadeOut2">Click me to fade out image.</button>
+            <button id="fadeToggle2">Click me to toggle fade image.</button>
+        
+            <button id="slideToggle2">Click me to toggle slide image.</button>
+        
+            <button id="animate2">Click me to custom animation.</button>
+        
+        </div>
+    </div>    
+
+   
+
+    <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+            <div class="image">
+                <a href="fruits.jpg"><img src="fruits.jpg" alt="fruits" class="js-image3"></a>
+            </div>
+        </div>
+        <div>
+        
+            <button id="btnHide3">Click me to hide image.</button>
+            <button id="btnToggle3">Click me to toggle image.</button>
+        
+            <button id="fadeOut3">Click me to fade out image.</button>
+            <button id="fadeToggle3">Click me to toggle fade image.</button>
+        
+            <button id="slideToggle3">Click me to toggle slide image.</button>
+        
+            <button id="animate3">Click me to custom animation.</button>
+        
+        </div>
+    </div>    
+
+   
+    
+    <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+            <div class="image">
+                <a href="bun.jpeg"><img src="bun.jpeg" alt="bun" class="js-image4"></a>
+            </div>
+        </div>
+        <div>
+        
+            <button id="btnHide4">Click me to hide image.</button>
+            <button id="btnToggle4">Click me to toggle image.</button>
+        
+            <button id="fadeOut4">Click me to fade out image.</button>
+            <button id="fadeToggle4">Click me to toggle fade image.</button>
+        
+            <button id="slideToggle4">Click me to toggle slide image.</button>
+        
+            <button id="animate4">Click me to custom animation.</button>
+        
+        </div>
+     
+    </div>
+
+    
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#clickB").click(function(){
+                    $(".some-ps").append('<p class="lorem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium quas ducimus vero deserunt eius facere minima architecto! Quia quos tempora officiis, voluptate eos molestiae sapiente at recusandae veniam eveniet?</p>');
+    
+                });
+            
+    //Image 1 
+           
+    
+            $("#btnHide").click(function(){
+                $(".js-image").hide();
+            });
+            $("#btnToggle").click(function(){
+                $(".js-image").toggle();
+            });
+            $("#fadeOut").click(function(){
+                $(".js-image").fadeOut(2000);
+            });
+            $("#fadeToggle").click(function(){
+                $(".js-image").fadeToggle(3000);
+            });
+            $("#slideToggle").click(function(){
+                $(".js-image").slideToggle(3000);
+                   
+                
+                });
+
+     //Image 2 
+     
+            
+            $("#btnHide2").click(function(){
+                $(".js-image2").hide();
+            });
+            $("#btnToggle2").click(function(){
+                $(".js-image2").toggle();
+            });
+            $("#fadeOut2").click(function(){
+                $(".js-image2").fadeOut(2000);
+            });
+            $("#fadeToggle2").click(function(){
+                $(".js-image2").fadeToggle(3000);
+            });
+            $("#slideToggle2").click(function(){
+                $(".js-image2").slideToggle(3000);
+            });  
+
+     //Image 3 
+            
+    
+            $("#btnHide3").click(function(){
+                $(".js-image3").hide();
+            });
+            $("#btnToggle3").click(function(){
+                $(".js-image3").toggle();
+            });
+            $("#fadeOut3").click(function(){
+                $(".js-image3").fadeOut(2000);
+            });
+            $("#fadeToggle3").click(function(){
+                $(".js-image3").fadeToggle(3000);
+            });
+            $("#slideToggle3").click(function(){
+                $(".js-image3").slideToggle(3000)  
+            });  
+
+     //Image 4  
+            $("#clickR4").click(function(){
+                $(".lorem-p:last-child").remove();
+            });
+    
+            $("#btnHide4").click(function(){
+                $(".js-image4").hide();
+            });
+            $("#btnToggle4").click(function(){
+                $(".js-image4").toggle();
+            });
+            $("#fadeOut4").click(function(){
+                $(".js-image4").fadeOut(2000);
+            });
+            $("#fadeToggle4").click(function(){
+                $(".js-image4").fadeToggle(3000);
+            });
+            $("#slideToggle4").click(function(){
+                $(".js-image4").slideToggle(3000);
+                
+                     
+    
+            });
+            $("#animation").click(function(){
+                $(".js-image").animate({
+                    height: '0px',
+                    width: '0px',})
+            });
+        });
+        
+    
+           
+    </script>
+</body>
+</html>
