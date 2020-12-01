@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week 12</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
@@ -32,7 +32,7 @@
     
         <button id="slideToggle">Click me to toggle slide image.</button>
     
-        <button id="animate">Click me to custom animation.</button>
+        <button id="animation">Click me to custom animation.</button>
     
     </div>
     </div>
@@ -199,9 +199,10 @@
     
             });
             $("#animation").click(function(){
+                console.log("click");
                 $(".js-image").animate({
-                    height: '0px',
-                    width: '0px',})
+                    height: '0px'
+                    })
             });
         });
         
