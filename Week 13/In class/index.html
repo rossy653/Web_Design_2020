@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryUI/FancyBox</title>
+    <link rel="stylesheet" href="Libraries/jquery-ui.css">
+    
+    
+</head>
+<body>
+<div id="accordion">
+    <h3>Why is the sky blue?</h3>
+    <div>
+        <img src:"https://www.google.com/search?q=earth&client=firefox-b-1-d&sxsrf=ALeKk03Pj2ZYI__fUBHKFkraBcNMJvD_1g:1606847226403&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjE2YyxtK3tAhXkJTQIHYUOAtEQ_AUoAXoECA0QAw&biw=1440&bih=716#imgrc=6ankKNX0Lkj3PM" alt="earth"><img>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis, architecto provident vero illo sapiente deserunt, animi, ut itaque voluptates quas eligendi reiciendis expedita aperiam? Ratione tenetur ducimus nam veritatis!</p>
+    </div>
+    <!--section 1 end-->
+    <h3>Why is Earth spherical?</h3>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores error culpa reiciendis accusamus dolores aliquam eum doloribus modi, molestiae provident facere quas laborum eius porro exercitationem fugit inventore nesciunt?</p>
+    </div>
+    <!--section 2 end-->
+    <h3>Why is the Sun hot?</h3>
+    <div></div>
+    <!--section 3 end-->
+</div>
+<hr>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Video</a></li>
+        <li><a href="#tabs-2">Photo</a></li>
+        <li><a href="#tabs-3">Audio</a></li>
+        <li><a href="#tabs-4">Lightning</a></li>
+    </ul>
+    <div id="tabs-1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fugit corrupti nihil provident doloremque natus cupiditate perferendis a quos iste? Aliquid dolorum explicabo blanditiis ipsa, ut ullam molestiae harum laboriosam.</p>
+    </div>
+    <div id="tabs-2">
+        <p>Chicory, milk, organic, cappuccino galão cup barista to go. Carajillo siphon aroma shop in, ristretto, trifecta cortado percolator that robusta. Rich instant dark barista skinny, irish dripper saucer as single origin con panna.Irish strong bar  cup redeye, roast grinder kopi-luwak instant extraction brewed. Milk, french press ut, chicory, dripper doppio black siphon barista. Steamed french press, caffeine aromatic sweet and coffee.</p>
+    </div>
+    <div id="tabs-3">
+        <p>Nap all day cat dog hate mouse eat string barf pillow no baths hate everything but kitty poochy. Sleep on keyboard toy mouse squeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff hand. The dog smells bad gnaw the corn cob.</p>
+    </div>
+    <div id="tabs-4">
+        <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+        </p>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="Libraries/jqueryUI/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("accordion").accordion({
+                heightstyle: "content"
+            });
+            
+        $("#tabs").tabs();
+        });
+    </script>
+</body>
