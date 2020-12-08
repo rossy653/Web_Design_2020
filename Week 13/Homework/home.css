@@ -20,7 +20,9 @@ html{
     position: relative;
 }
 .text-wrapper{
-    text-align: center;}
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 h1 {
     font-size: 7rem;
@@ -56,7 +58,8 @@ p{
     padding-top: 0;
     text-align: left;
     background-color: white;
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 h3{
