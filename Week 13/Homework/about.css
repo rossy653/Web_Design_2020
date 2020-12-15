@@ -8,9 +8,7 @@
   }
 
 
-html{
-    font-size: 10px;
-}
+
 
   .content-wrapper{
       width: 100%;
@@ -46,7 +44,8 @@ h1 {
     align-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 50px;
+    padding: 50px 10% 50px 10%;
+    
     background-color: rgb(255, 255, 255);
    /* background-color: rgba(255, 241, 212, 0.336);*/
 }
@@ -54,16 +53,17 @@ h1 {
     background-color: rgba(255, 241, 212, 0.336);
     width: 100%;
     
-    padding: 50px;
+    padding: 50px 10% 50px 10%;
     text-align: center;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 50px;
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(23, 75, 78);
     font-weight: 100;
     line-height: 0.4;
+    margin-top: 10px;
     
    
 }
@@ -83,16 +83,39 @@ iframe{
     width: 95%;
 }
 
+.learn{
+    padding-top:25px;
+}
+
+
+.learn2 {
+    padding: 15px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: rgb(212, 130, 36);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(247, 110, 19);
+    margin: 40px 0px 20px 0px;
+  }  
+  .learn2:hover {
+      background: linear-gradient(45deg, rgb(29, 102, 105), #fa7f38);
+      color: rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+  
+
 /*---Grid----*/
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 100px 300px;
-    grid-gap:30px;
+    grid-gap:15px;
     grid-auto-flow: dense;
-    padding: 50px;
+    padding: 50px 10% 50px 10%;
     background-color: white;
     align-content: center;
+    /*margin: auto; */
 }
 
 .gallery-item{
@@ -174,6 +197,29 @@ iframe{
     .w-1, .w-2, .w-3, .w-4, .w-5, .w-6{
         grid-column: span 1;
     }
-
+    .text-container{
+    
+        padding: 50px 40px 50px 40px;
+        }
+    .text-container1{
+    
+        padding: 50px 40px 50px 40px;
+        }
+    container1{
+    
+        padding: 50px 40px 50px 40px;
+        }
+p{
+ font-size:17px;
+}
+h1 {
+    font-size: 3.5rem;}
 }
 /*---End Grid----*/
+
+
+
+  #more{
+    display: none;
+  }
+  

@@ -23,7 +23,7 @@ function navbarLinkClick() {
 
 
 images[0] = 'pic1.jpeg';
-images[1] = 'pic2.jpg';
+images[1] = 'monkey.jpg';
 images[2] = 'pic3.jpg';
 images[3] = 'pic4.jpg';
 
@@ -47,4 +47,32 @@ window.addEventListener('scroll',function () {
     let scrollPosition = window.pageYOffset;
 
     parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
-});
+}); 
+
+/*===Galerry===*/
+const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+};

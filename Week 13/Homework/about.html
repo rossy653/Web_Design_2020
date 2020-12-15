@@ -59,23 +59,99 @@
       <div class="gallery-item">
         <div class="image">
           <iframe src="https://player.vimeo.com/video/165148317?color=006633&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/165148317">Environment in Liberal Arts - A Discussion with Dr. Wayne Clough &amp; Dr. Michael Tobias</a> from <a href="https://vimeo.com/georgiacollege">Georgia College</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
       </div>
       </div>
   </div>  
 </div>
+
 <div class="text-container2">
-  <button id="btnToggle">Learn more</button>
-  <div class="some-ps">
-    <p class="lorem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium quas ducimus vero deserunt eius facere minima architecto! Quia quos tempora officiis, voluptate eos molestiae sapiente at recusandae veniam eveniet?</p>
+  <h3 class="text">Learn More</h3>
+<p class="learn">Dancing Star Foundation has been working for some time with the Ecuadorian Government to Write, Direct and Co-Produce a short 21 minute film, "Yasuní – A Meditation on Life," which<span id="dots">...</span>
+  <span id="more">premiered at the Rio+20 Summit in mid-June, 2012; it was screened most recently at the IUCN World Conservation Congress at Jeju, Korea.Dr. Tobias and Ms. Morrison traveled to Yasuní National Park with Ecuadorian film crews and the Ecuadorian Secretary of State for Yasuní – ITT, Dr. Ivonne Baki, to help champion the cause of preserving the millions of acres of critical habitat Yasuní embodies.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AJP_jlw3brw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </span> </p>
+<button class="learn2" type="button" id="read" onclick="read()">Learn More</button>
+</div>
+</div>
+
+<footer id="footer">
+  <div class="main-content">
+      <div class="left box">
+          <h2 class="tops">Quick Links</h2>
+          <div class="content">
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              
+          </div>
+      </div>
     
-</div>
-</div>
+      <div class="center box">
+          <h2 class="tops">Address</h2>
+          <div class="content">
+              <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="textf">11835 W Olympic Blvd # 820E, Los Angeles, CA 90064</span>
+              </div>
+              <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="textf">+(310) 966-1424</span>
+              </div>
+              <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="textf">dancefound@gmail.com</span>
+              </div>
+              <div class="social">
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+      </div>
+      <div class="right box">
+          <h2 class="tops">Join Us</h2>
+          <div class="content">
+              <form action="#">
+                  <div class="email"></div>
+                  <div class="textf">Email *</div>
+                  <input  type="email" required>
+              </div>
+              <div class="msg">
+                  <div class="textf">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                  <button class="butonche" type="submit">Send</button>
+              </div>
+              </form>
+          </div>
+      </div>
+    </footer>
+   </div>   
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="about.js"></script>
     <script src="nav.js"></script>
+    <script src="https://kit.fontawesome.com/e1f4937dec.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    var i=0;
+    function read(){
+      if(!i){
+        document.getElementById("more").style.display ="inline";
+        document.getElementById("dots").style.display ="none";
+        document.getElementById("read").style.display ="none";
+        
+      }
+    }
+    </script>
     
   </body>
   </html>
