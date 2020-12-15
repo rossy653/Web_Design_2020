@@ -99,7 +99,7 @@ h3{
   .btn-flex{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 50px 75px 50px;
   }
 
   .button1{
@@ -130,7 +130,7 @@ h3{
   }
   
   .container {
-    max-width: 980px;
+    max-width: 1095px;
     margin: auto;
     border: #fff solid 3px;
     background: #fff;
